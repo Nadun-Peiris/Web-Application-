@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/* Adjust the content to account for the fixed navbar */
+/* Adjust the content to account for the fixed navbar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for better readability */
+    line-height: 1.6;
+    padding-top: 80px; /* Adjusted padding-top to avoid overlap with the navbar */
+    margin: 0; /* Remove default margin */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    background-color: #000; /* Make the background fully opaque */
+    z-index: 10;
+    height: 50px;
+    transition: top 0.3s;
+}
+
+/* Rest of the styles remain unchanged */
+
+
+header a.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+header a.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 8;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F8D732;
+}
+
+/* Right-aligned "Login" button */
+.login-btn {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    background-color: #F8D732;
+    color: black;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #C3A51D;
+}
+
+
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.step {
+    background-color: #FFCC00;
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 25px;  /* Rounded buttons */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.step.active {
+    background-color: #e6b800;
+}
+
+.step:hover {
+    background-color: #ffb200;
+}.checkout-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.checkout-box {
+    background-color: #222;
+    padding: 20px;
+    width: 60%;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+}
+
+.movie-info img {
+    max-width: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.movie-info h2 {
+    color: #FFCC00;
+    margin: 0;
+}
+
+.movie-info p {
+    margin: 5px 0;
+}
+
+.price-summary, .payment-method {
+    margin-top: 20px;
+}
+
+.price-summary table, .payment-method table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-summary th, .payment-method th {
+    text-align: left;
+    padding: 10px;
+    background-color: #333;
+}
+
+.price-summary td, .payment-method td {
+    padding: 10px;
+    background-color: #444;
+}
+
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFCC00;
+    text-align: right;
+}
+
+.checkout-button {
+    background-color: #FFCC00;
+    color: black;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.payment-method select {
+    background-color: #444;
+    color: #FFCC00;
+    border: 2px solid #FFCC00;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.payment-method select:focus {
+    outline: none;
+    border-color: #e6b800;
+}
+
+/* Tooltip Styles */
+.tooltip {
+    position: absolute;
+    background-color: #444;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    max-width: 300px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.checkout-button:hover {
+    background-color: #e6b800;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
