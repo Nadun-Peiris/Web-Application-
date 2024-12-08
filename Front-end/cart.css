@@ -1,0 +1,227 @@
+@charset "UTF-8";
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adjust the content to account for the fixed navbar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for better readability */
+    line-height: 1.6;
+    padding-top: 80px; /* Adjusted padding-top to avoid overlap with the navbar */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 2rem; /* Increased padding to ensure the navbar is fully visible */
+    background-color: #000000; /* Solid black background */
+    z-index: 10;
+    height: 60px; /* Increased height to make sure navbar is tall enough */
+    transition: top 0.3s;
+}
+
+header a.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+header a.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 8;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F8D732;
+}
+
+/* Right-aligned "Login" button */
+.login-btn {
+    position: absolute;
+    right: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    background-color: #F8D732;
+    color: black;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #C3A51D;
+}
+
+/* Page Heading */
+.heading {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(45deg, #FFD700, #000000); /* Yellow to Black gradient */
+    color: #000000; /* Black text for contrast */
+}
+
+.heading h3 {
+    font-size: 28px;
+}
+
+.heading p a {
+    color: #FFD700; /* Yellow links */
+    text-decoration: none;
+}
+
+/* Cart Section */
+.shopping-cart {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #000000; /* Black background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5); /* Yellow shadow */
+}
+
+.shopping-cart .title {
+    font-size: 24px;
+    text-align: center;
+    color: #FFD700; /* Yellow title */
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.box {
+    background-color: #111111; /* Dark gray for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #FFD700; /* Yellow border */
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.box .name {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD700; /* Yellow for movie names */
+}
+
+.box .price, .box .sub-total span {
+    color: #FFD700; /* Yellow prices */
+    font-weight: bold;
+}
+
+.box select, .box input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 80%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #FFD700; /* Yellow border */
+    background-color: #000000; /* Black input fields */
+    color: #FFD700; /* Yellow text */
+}
+
+.box .btn {
+    padding: 10px 15px;
+    background-color: #FFD700; /* Yellow button */
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.box .btn:hover {
+    background-color: #FFC107; /* Slightly lighter yellow on hover */
+}
+
+.cart-total {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cart-total p {
+    font-size: 18px;
+    color: #FFD700; /* Yellow text */
+}
+
+.cart-total .flex {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cart-total .flex a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #FFD700; /* Yellow buttons */
+    color: #000000; /* Black text */
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cart-total .flex a:hover {
+    background-color: #FFC107; /* Slightly lighter yellow on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 0.5rem; /* Reduced padding to make the footer thinner */
+    background: #000;
+    margin-top: 2rem;
+    color: #aaa;
+    font-size: 0.8rem; /* Reduced font size for a thinner footer */
+}
+
+footer p {
+    margin: 0;
+}
+
