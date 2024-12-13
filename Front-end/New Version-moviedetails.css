@@ -1,0 +1,250 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adjust the content to account for the fixed navbar */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text for better readability */
+    line-height: 1.6;
+    padding-top: 80px; /* Adjusted padding-top to avoid overlap with the navbar */
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem; /* Adjust padding */
+    background-color: #000000; /* Solid black background */
+    z-index: 10;
+    height: 80px; /* Adjusted height to ensure navbar is tall enough */
+    transition: top 0.3s;
+}
+
+/* Logo Styles */
+header a.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+}
+
+header a.logo img {
+    height: 100px;
+    width: auto;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Adjusted to space items evenly */
+    flex-grow: 1; /* Make the navigation menu grow to fill available space */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #F8D732;
+}
+
+/* Right-aligned "Login" button */
+.login-btn {
+    padding: 0.5rem 1rem;
+    background-color: #F8D732;
+    color: black;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: auto; /* Ensure the button is aligned to the right */
+}
+
+.login-btn:hover {
+    background-color: #C3A51D;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(45deg, #FFD700, #000000); /* Yellow to black */
+    color: #000000; /* Black text */
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #FFD700; /* Yellow */
+}
+
+.hero p {
+    font-size: 18px;
+    color: #FFD700; /* Yellow */
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.movie-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Movie Cards */
+.movie-card {
+    background-color: #000000; /* Black background */
+    border: 2px solid #FFD700; /* Yellow border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(255, 215, 0, 0.5); /* Yellow shadow */
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    color: #FFD700; /* Yellow text */
+}
+
+.movie-card .description {
+    font-size: 14px;
+    color: #FFD700; /* Yellow */
+    margin: 10px 0;
+}
+
+.movie-card .genre {
+    font-size: 14px;
+    color: #FFD700; /* Yellow */
+    margin-bottom: 10px;
+}
+
+.movie-card .stars span {
+    color: #FFD700; /* Yellow stars */
+    font-size: 18px;
+}
+
+.movie-card select, .movie-card input {
+    margin: 10px 0;
+    padding: 8px;
+    width: 80%;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #FFD700; /* Yellow border */
+    background-color: #000000; /* Black background */
+    color: #FFD700; /* Yellow text */
+}
+
+.movie-card .btn {
+    padding: 10px 15px;
+    background-color: #FFD700; /* Yellow button */
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.movie-card .btn:hover {
+    background-color: #FFA500; /* Slightly darker yellow on hover */
+}
+
+.movie-card .trailer-btn {
+    background-color: #FFD700; /* Yellow button */
+}
+
+.movie-card .trailer-btn:hover {
+    background-color: #FFA500; /* Slightly darker yellow on hover */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #000;
+    margin-top: 2rem;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Banner */
+.banner {
+    background: linear-gradient(45deg, #FFD700, #000000); /* Yellow to black */
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.banner h2 {
+    color: #000000; /* Black text */
+    margin-bottom: 15px;
+}
+
+.banner label {
+    margin: 10px 20px;
+    font-size: 16px;
+    color: #000000; /* Black text */
+}
+
+.banner input[type="radio"] {
+    margin-right: 10px;
+}
+
+.banner .btn {
+    padding: 10px 15px;
+    background-color: #FFD700; /* Yellow button */
+    color: #000000; /* Black text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.banner .btn:hover {
+    background-color: #FFA500; /* Slightly darker yellow */
+}
